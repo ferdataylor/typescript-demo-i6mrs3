@@ -13,8 +13,8 @@ source.subscribe(
   () => console.log(`completed`)
 );
 
-const cars: string[] = ['Volvo', 'Jeep', 'Volvo', 'Lincoln', 'Lincoln', 'Ford'];
-const uniqueCars: string[] = Array.from(new Set(cars));
+const cars = ['Volvo', 'Jeep', 'Volvo', 'Lincoln', 'Lincoln', 'Ford'];
+const uniqueCars = Array.from(new Set(cars));
+const lodashUniqCars = uniq(cars);
 console.log(uniqueCars);
-console.log('type of uniqueCars = ' + typeof uniqueCars);
-console.log('type of cars = ' + typeof cars);
+console.log(lodashUniqCars);
