@@ -1,6 +1,7 @@
 // Import stylesheets
 import './style.css';
 import { Observable, Observer } from 'rxjs';
+import { cloneDeep, orderBy, uniq } from 'lodash';
 
 // Write TypeScript code!
 let numbers = [1, 5, 10];
